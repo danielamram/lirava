@@ -1,0 +1,22 @@
+:host.active * .zoomIn{
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
+
+:host.active * .slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+}
+
+:host {
+  background: #5f6071 url(../../assets/bg3.jpg) no-repeat scroll;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+p {
+  font-size: em;}

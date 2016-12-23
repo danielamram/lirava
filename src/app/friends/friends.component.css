@@ -1,0 +1,24 @@
+:host {
+  background-color: #fff;
+  color: #1d587b;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.container {
+  text-align: center;
+}
+
+.friends {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.friend-logo img{
+  width: 100px;
+  height: 100px;
+}

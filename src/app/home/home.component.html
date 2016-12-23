@@ -1,0 +1,163 @@
+<!--<div class="site-body" role="main">
+  <section class="wrapper overview">
+    <div class="container">
+      <div class="usp">
+        <div class="usp__content"><h1 class="usp__title">על החברה</h1>
+          <p>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט
+            למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה
+            ברורק.</p></div>
+      </div>
+    </div>
+    <div class="cover-image"></div>
+  </section>
+  <section class="wrapper integrations">
+      <div class="container"><p class="integrations__text">אוקיי, אז בוא נתחיל לנקות
+      </p><img src="../../assets/clean-png.png"
+               class="integrations__thumb"></div>
+    </section>
+  <section class="wrapper jh">
+    <div class="container"><a href="http://www.wearejh.com/" class="jh__logo"><img src="/img/jh-logo.png" alt=""></a>
+      <h3 class="jh__title">An open source project by JH</h3>
+      <p class="jh__text">BrowserSync is an open-source project created and maintained by the front-end
+        designers/developers at <a href="http://www.wearejh.com/" title="visit http://wearejh.com">JH</a>. Together with
+        contributors from all over the world, we aim to make modern, multi-device web development faster &amp; easier.
+      </p>
+      <p class="jh__links"><a href="https://github.com/Browsersync/browser-sync" title="Browsersync on Github">
+        <svg class="svg-icon">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/icons/icons.svg#svg-contact"></use>
+        </svg>
+      </a> <a href="https://twitter.com/browsersync" title="@Browsersync on Twitter">
+        <svg class="svg-icon">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/icons/icons.svg#svg-twitter"></use>
+        </svg>
+      </a> <a href="https://browsersync.herokuapp.com" title="Browsersync Slack Team">
+        <svg class="svg-icon">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/icons/icons.svg#svg-slack"></use>
+        </svg>
+      </a></p>
+    </div>
+  </section>
+  <section class="wrapper wrapper&#45;&#45;alt users">
+    <div class="container"><h2 class="section-title">החברים של לראווה</h2>
+      <div class="user__list">
+        <div class="user__logo"><img src="../../assets/cafecafe.jpg"></div>
+        <div class="user__logo google"><img src="../../assets/agadir.jpg"></div>
+        <div class="user__logo adobe"><img src="../../assets/machsanei.jpg"></div>
+      </div>
+      <div class="user__list">
+        <div class="user__person">
+          <div class="person__quote"><p class="person__name">שמעון בוסקילה</p>
+            <blockquote><p>"לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קוואזי במר מודוף. אודיפו בלאסטיק מונופץ
+              קליר, בנפת נפקט
+              למסון בלרק"</p></blockquote>
+          </div>
+          <img src="../../assets/user-rupert-sm.jpg">
+        </div>
+        <div class="user__person">
+          <div class="person__quote"><p class="person__name">גדעון מנשה</p>
+            <blockquote><p>"וענוף לפרומי בלוף קינץ תתיח לרעח. לת צשחמי צש בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה
+              שיצמה
+              ברורק."</p></blockquote>
+          </div>
+          <img src="../../assets/user-addy-sm.jpg">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="install" class="wrapper install">
+    <div class="container container&#45;&#45;skinny"><h2 class="section-title">Get started in 5 minutes.</h2>
+      <p class="lede"></p>
+      <ol class="step-list">
+        <li class="step"><h3>1. Install Node.js</h3>
+          <p>Browsersync is a module for Node.js, a platform for fast network applications. There are convenient <a
+            href="http://nodejs.org/download/">installers for MacOS, Windows and Linux</a>.</p></li>
+        <li class="step"><h3>2. Install Browsersync</h3>
+          <p>The Node.js package manager (npm) is used to install Browsersync from <a
+            href="https://npmjs.org/package/browser-sync">a repository</a>. Open a terminal window and run the following
+            command:</p>
+          <pre><code>npm install -g browser-sync</code></pre>
+          <p>You’re telling the package manager to download the Browsersync files and install them globally so they’re
+            available to all your projects.</p></li>
+        <li class="step"><h3>3. Start Browsersync</h3>
+          <p>A basic use is to watch all CSS files in the <code>css</code> directory and update connected browsers if a
+            change occurs. Navigate your terminal window to a project and run the appropriate command:</p><h4>Static
+            sites</h4>
+          <p>If you’re only using <code>.html</code> files, you’ll need to use the <em>server mode</em>. Browsersync
+            will start a mini-server and provide a URL to view your site.</p>
+          <pre><code>browser-sync start &#45;&#45;server &#45;&#45;files "css/*.css"</code></pre>
+          <h4>Dynamic sites</h4>
+          <p>If you’re already running a local server with PHP or similar, you’ll need to use the <em>proxy mode</em>.
+            Browsersync will wrap your vhost with a proxy URL to view your site.</p>
+          <pre><code>browser-sync start &#45;&#45;proxy "myproject.dev" &#45;&#45;files "css/*.css"</code></pre>
+        </li>
+      </ol>
+      <div class="grid">
+        <div class="one-half text&#45;&#45;center"><h3>User Guides</h3>
+          <ul class="nav">
+            <li><a href="/docs">Documentation</a></li>
+            <li><a href="/docs/command-line">Command line usage</a></li>
+            <li><a href="http://stackoverflow.com/questions/tagged/browser-sync">Get help on Stack Overflow</a></li>
+            <li><a href="https://github.com/Browsersync/browser-sync/issues">Report issues on Github</a></li>
+          </ul>
+        </div>
+        <div class="one-half text&#45;&#45;center"><h3>Integration Guides</h3>
+          <ul class="nav">
+            <li><a href="/docs/grunt">Grunt plugin</a></li>
+            <li><a href="/docs/gulp">Gulp integration</a></li>
+            <li><a href="/docs/api">API documentation</a></li>
+            <li><a href="/docs/options">Options documentation</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>-->
+<div class="container">
+  <div class="logo-title fadeIn animated">לראווה</div>
+  <p class="sub-title fadeInLeftBig animated"> המקצוענים לניקוי כל סוגי החלונות. </p>
+  <svg class="arrow-down animated pulse infinite" (click)="fullpageService.moveSectionDown()">
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons.svg#arrowDown"></use>
+  </svg>
+</div>
+<svg class="svg-mask fadeIn animated">
+  <rect fill="#fff" width="100%" height="100%" fill-opacity=".3" mask="url(#ham-text)"/>
+  <mask id="ham-text">
+    <rect fill="#fff" width="100%" height="100%">
+    </rect>
+    <svg viewBox="0 0 600 600" fill="#000" x="32.5%" y="4%" height="35%" width="35%">
+      <g>
+        <rect x="22.912" y="425.374" width="556.088" height="4.758"/>
+        <rect x="22.912" y="252.397" width="556.088" height="4.758"/>
+        <rect x="124.133" y="180" width="5.663" height="327.695"/>
+        <rect x="480.452" y="180" width="5.663" height="327.695"/>
+        <rect x="294.499" y="180" width="5.663" height="327.695"/>
+      </g>
+      <g>
+        <path d="M372.216-0.492c-2.668,0.016-5.336,0.062-8.004,0.12C267.512,472.665,316.397,558,316.397,558l6.88-6
+        C286.339,450.045,344.214,136.038,372.216-0.492z"/>
+      </g>
+      <g>
+        <path d="M253.209,473.592c0,0,18.041,38.908,4.541,81.658c0,0-3.75,5.667,1.75,17c0,0,2.875,1.75-0.875,8.5
+        c0,0-0.625,19.25,11.625,12.25c0,0,11-9.25,13.75-9c0,0,25.977-15.004,16.956-29.639c-2.734-4.436-5.206-12.611-20.706,2.389
+        c0,0,28.125-45.625,19.75-66.625c0,0,10.979-17.217,12.438-24.875c0,0,7.945-34.868,28.063-46.25c3.15-1.782,20.5-8.438,20.5-8.438
+        l0.415-3.994l13.46-3.568l2.125-4.125c0,0,27.5-37.75,33.25-39c0,0,20.208-10.875,22.333-5.375c0,0,10.875-4.125,3.75-14
+        s-24.75,2.083-24.75,2.083l-7.917,7.25l-35.958,29.509c0,0-7.097,5.79-10.25,5c-16.667-4.176-20-14-20-14l14.27-0.873
+        c0,0,3.355-9.127,14.006-12.469c0,0,1.849-9.534,5.224-15.659c0,0,7.75-0.5,8,1s-0.375-35.813-35.625-32.75
+        c-6.974,0.606-14.907,10.586-17.875,15.75c-4.409,7.671-8.75,19.625-5.25,35c0,0-16.308,9.569-33.459-8.759
+        c-8.761-9.363-0.083-16-0.083-16l45.958-37.333c0,0,5.986-18.363-4.764-19.488S309,297.25,309,297.25s-0.5,10.5-4.25,11.25
+        s-23.25,11-37.25,21.5c-12.442,9.332-9.085,14.938-6.5,19.333c1.705,2.899,5.414,11.057,5.414,11.057l-1.96,4.017
+        c0,0,13.918,9.553,5.796,26.967c-3.692,7.917-16.25,16.875-29.033,31.495c0,0-24.018-33.512-47.55-45.037
+        c-3.909-1.914-16.542,4.333-17.667,5.833s-6.708,49.167-2.333,58.667c0,0-10.167-14.774-17.917-12.929
+        c-5.25,1.25-9.989,18.274-6.083,19.095c10.705,2.25,23.416,24.879,29.09,21.861c9.792-5.208,9.106-8.384,9.106-8.384l3.471-5.644
+        l5.571-27.88C196.905,428.453,206.459,465.967,253.209,473.592z"/>
+      </g>
+      <g>
+        <path d="M423.14,380.5c-0.307-0.833,21.694-76.333,21.694-76.333l-6.344-2L417,382L423.14,380.5z"/>
+      </g>
+    </svg>
+  </mask>
+</svg>
+<video preload="auto" data-autoplay data-keepplaying loop muted class="bg-video">
+  <source src="/assets/video.mp4" type="video/mp4">
+  <source src="/assets/video.webm" type="video/webm">
+</video>
