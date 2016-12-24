@@ -1,5 +1,5 @@
 {
-  "https_only": true,
+  "https_only": false,
   "root": "dist",
   "clean_urls": false,
   "routes": {
