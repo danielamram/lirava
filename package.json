@@ -26,6 +26,8 @@
     "@angular/platform-server": "~2.2.1",
     "@angular/router": "~3.2.1",
     "@angular/upgrade": "~2.2.1",
+    "@types/jquery": "^2.0.34",
+    "@types/node": "^6.0.48",
     "angular2-in-memory-web-api": "0.0.21",
     "angular2-router-loader": "^0.3.4",
     "angular2-template-loader": "^0.6.0",
@@ -44,14 +46,13 @@
     "svgo": "^0.7.1",
     "svgo-loader": "^1.1.2",
     "to-string-loader": "^1.1.4",
+    "typings": "^2.1.0",
     "url-loader": "^0.5.7",
     "webpack": "2.1.0-beta.27",
     "webpack-dev-server": "2.1.0-beta.11",
     "webpack-merge": "^0.15.0",
     "yargs": "^6.5.0",
-    "zone.js": "~0.6.26",
-    "@types/jquery": "^2.0.34",
-    "@types/node": "^6.0.48"
+    "zone.js": "~0.6.26"
   },
   "devDependencies": {
     "@types/jquery": "^2.0.34",
