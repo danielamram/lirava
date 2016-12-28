@@ -5,7 +5,6 @@
   "scripts": {
     "build": "webpack --progress",
     "watch": "npm run build -- --watch",
-    "postinstall": "npm run build",
     "server": "webpack-dev-server --inline --progress --port 3000 --content-base src",
     "start": "npm run server"
   },
