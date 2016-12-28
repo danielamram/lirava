@@ -29,6 +29,7 @@
     "angular2-in-memory-web-api": "0.0.21",
     "aos": "^2.1.1",
     "bootstrap": "^3.3.7",
+    "yargs": "^6.5.0",
     "core-js": "^2.4.1",
     "ie-shim": "^0.1.0",
     "ng2-fullpage": "^2.0.5",
