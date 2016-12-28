@@ -51,7 +51,7 @@
     "yargs": "^6.5.0",
     "zone.js": "~0.6.26",
     "@types/jquery": "^2.0.34",
-    "@types/node": "^6.0.48",
+    "@types/node": "^6.0.48"
   },
   "devDependencies": {
     "@types/jquery": "^2.0.34",
