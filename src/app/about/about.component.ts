@@ -1,4 +1,5 @@
-import {Component, ElementRef} from '@angular/core';
+import {Component} from '@angular/core';
+import {MnFullpageService} from "ng2-fullpage";
 
 @Component({
   selector: 'about',
@@ -6,6 +7,6 @@ import {Component, ElementRef} from '@angular/core';
   templateUrl: './about.component.html'
 })
 export class AboutComponent {
-  constructor(private elementRef: ElementRef) {
+  constructor(private fullpageService: MnFullpageService) {
   }
 }

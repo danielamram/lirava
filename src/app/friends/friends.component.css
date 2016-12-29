@@ -1,5 +1,6 @@
 :host {
-  background-color: #fff;
+  background: #5f6071 url(../../assets/friends.jpg) no-repeat scroll;
+  background-size: cover;
   color: #1d587b;
   display: flex;
   align-items: center;
