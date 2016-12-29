@@ -7,10 +7,12 @@ import {MnFullpageService} from "ng2-fullpage";
   templateUrl: './home.component.html'
 })
 export class HomeComponent{
-  video:any;
-  video2:any;
+  videoMp4:any;
+  videoWebm:any;
+  videoOgg:any;
   constructor(private fullpageService: MnFullpageService) {
-    this.video = require('../..//assets/video.mp4');
-    this.video2 = require('../../assets/video.webm');
+    this.videoMp4 = require('../..//assets/video.mp4');
+    this.videoWebm = require('../../assets/video.webm');
+    this.videoOgg = require('../../assets/video.ogv');
   }
 }

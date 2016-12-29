@@ -41,7 +41,7 @@ var webpackConfig = {
       {test: /\.css$/, loaders: ['to-string-loader', 'css-loader']},
       {test: /\.html$/, loader: 'raw-loader'},
       {
-        test: /\.(png|jpg|gif|svg|mp4|webm)$/,
+        test: /\.(png|jpg|gif|svg|mp4|webm|ogv)$/,
         loader: "file-loader?name=img/img-[hash:6].[ext]"
       }
     ]

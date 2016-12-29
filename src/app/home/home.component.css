@@ -20,10 +20,7 @@
   top: 0;
   left: 0;
   height: 100%;
-  -webkit-filter: grayscale(30%) brightness(0.9);
-  filter: grayscale(30%) brightness(0.9);
-  /*-webkit-filter: saturate(700%) grayscale(90%) blur(10px);
-  filter: saturate(300%) grayscale(80%) blur(10px) brightness(2);*/
+  filter: grayscale(50%) brightness(0.3);
 }
 
 .svg-mask {
