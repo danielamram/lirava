@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;;
   position: relative;
-  background: #525252;
 }
 
 :host.active .fadeIn {
@@ -19,12 +18,13 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  z-index: -1;
   filter: grayscale(50%) brightness(0.3);
 }
 
 .svg-mask {
-  /*background: url(../../assets/headerMask.svg);*/
   display: block;
   position: absolute;
   top: 0;
