@@ -1,6 +1,6 @@
 .container {
   height: 100%;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -9,9 +9,25 @@
   max-width: 500px;
 }
 
+
 .title {
   font-weight: bold;
-  font-size: 5em;
+  font-size: 3em;
+}
+
+p {
+  font-size: 1em;
+}
+
+@media only screen and (min-width: 700px) {
+  .title {
+    font-weight: bold;
+    font-size: 5em;
+  }
+
+  p {
+    font-size: 2em;
+  }
 }
 
 .arrow-down {
@@ -178,3 +194,34 @@
   animation-name: pulse;
 }
 
+.fp-slidesNav ul li a span {
+  background: #ffffff;
+  width: 10px;
+  height: 10px;
+  margin: -5px 0 0 -5px;
+}
+
+.fp-slidesNav ul li a.active span {
+  height: 12px;
+  width: 12px;
+  margin: -7px 0 0 -7px;
+  border: 1px #ffffff solid;
+  border-radius: 0;
+  background: transparent;
+}
+
+
+.fp-slidesNav ul li:hover a span {
+  width: 10px;
+  height: 10px;
+  margin: -6px 0 0 -6px;
+  border: 1px #ffffff solid;
+  background: transparent;
+}
+
+.fp-slidesNav ul li:hover a.active span {
+  height: 12px;
+  width: 12px;
+  margin: -7px 0 0 -7px;
+  border-radius: 0;
+}

@@ -1,4 +1,4 @@
-.header-container {
+:host {
   z-index: 1;
   position: fixed;
   color: white;
@@ -7,17 +7,8 @@
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
+  align-items: center;
   font-family: 'Varela Round', sans-serif;
-}
-
-@media only screen and (min-width: 700px) {
-  .header-container {
-    align-items: center;
-  }
-
-  .snip1135 {
-    min-width: 800px;
-  }
 }
 
 .nav-main {
@@ -25,7 +16,6 @@
 }
 
 .actions {
-  margin-right: auto;
   width: 100px;
   display: flex;
   justify-content: space-around;
@@ -35,7 +25,6 @@
 .hamburger-menu {
   width: 30px;
   height: 22px;
-  cursor: pointer;
   cursor: pointer;
 }
 
@@ -94,7 +83,8 @@
   }
 }
 
-.snip1135 {
+.header {
+  width: 100%;
   display: flex;
   padding-left: 0;
   flex-direction: row-reverse;
@@ -103,29 +93,28 @@
   font-weight: 500;
   z-index: 1;
 }
-.snip1135 * {
+.header * {
   box-sizing: border-box;
 }
-.snip1135 li {
-  display: inline-block;
+.header li {
   list-style: outside none none;
   margin: 0 15px;
   padding: 0;
 }
-.snip1135 a {
+.header a {
   padding: 0.5em 0;
   color: rgba(255, 255, 255, 0.5);
   position: relative;
   letter-spacing: 1px;
   text-decoration: none;
 }
-.snip1135 a:before,
-.snip1135 a:after {
+.header a:before,
+.header a:after {
   position: absolute;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
 }
-.snip1135 a:before {
+.header a:before {
   bottom: 0;
   display: block;
   height: 3px;
@@ -133,7 +122,7 @@
   content: "";
   background-color: #2980b9;
 }
-.snip1135 a:after {
+.header a:after {
   left: 0;
   top: 0;
   padding: 0.5em 0;
@@ -144,12 +133,30 @@
   max-width: 0;
   overflow: hidden;
 }
-.snip1135 a:hover:before,
-.snip1135 .current a:before {
+.header a:hover:before,
+.header .active a:before {
   opacity: 1;
   width: 100%;
 }
-.snip1135 a:hover:after,
-.snip1135 .current a:after {
+.header a:hover:after,
+.header .active a:after {
   max-width: 100%;
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (min-width: 700px) {
+  .mobile {
+    display: flex;
+  }
+
+  .header {
+    max-width: 800px;
+  }
+
+  .actions {
+    margin-right: auto;
+  }
 }
