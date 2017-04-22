@@ -7,6 +7,4 @@ import {MnFullpageService} from "ng2-fullpage";
   templateUrl: './about.component.html'
 })
 export class AboutComponent {
-  constructor(private fullpageService: MnFullpageService) {
-  }
 }
