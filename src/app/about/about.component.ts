@@ -1,5 +1,4 @@
-import {Component} from '@angular/core';
-import {MnFullpageService} from "ng2-fullpage";
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'about',
