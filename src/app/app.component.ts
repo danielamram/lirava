@@ -7,8 +7,7 @@ import {
   ViewEncapsulation
 } from '@angular/core';
 import { PageScrollConfig } from 'ng2-page-scroll';
-
-declare var WOW: any;
+import WOW from 'wow.js';
 declare var $: any;
 declare var jQuery: any;
 

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'about',
@@ -6,4 +7,9 @@ import { Component } from '@angular/core';
   templateUrl: './about.component.html'
 })
 export class AboutComponent {
+  public abouts$: FirebaseListObservable<any>;
+
+  constructor(private db: AngularFireDatabase) {
+    this.abouts$ = db.list('/about');
+  }
 }
