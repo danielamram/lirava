@@ -38,7 +38,7 @@ export class AppComponent implements OnInit {
     this.isLoaded = false;
     this.data$ = db.object('/');
 
-    this.data$.subscribe((a) => {
+    this.data$.subscribe(() => {
       this.isLoaded = true;
     })
   }

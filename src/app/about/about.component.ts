@@ -11,6 +11,5 @@ export class AboutComponent implements AfterViewInit{
 
   ngAfterViewInit(){
     $('.equal-heights .col-md-4').matchHeight();
-    console.log(this.list);
   }
 }
