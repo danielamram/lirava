@@ -88,8 +88,7 @@
 <div class="clearfix">
 </div>
 
-
-<section id="funfacts" class="parallax parallax-image" style="background-image:url(../../assets/img/counter.jpg);">
+<section id="funfacts" class="parallax parallax-image" style="background-image:url(../../assets/img/counter.jpg);" (vp-in-view)="handlerFunction()">
   <div class="wrapsection">
     <div class="container">
       <div class="parallax-content">
@@ -99,8 +98,10 @@
               <div class="icon">
                 <i class="fa fa-tint"></i>
               </div>
-              <h2 class="counter counted" data-from="0" data-to="294" data-speed="2500"></h2>
-              <h4>Happy Clients</h4>
+              <h2 *ngIf="isInView" class="counter" counto [step]="85" [countTo]="4562" [countFrom]="0" [duration]="5" (countoChange)="counto1 = $event">
+                {{counto1 | number:'.0-0'}}
+              </h2>
+              <h4>לקוחות לראווה</h4>
             </div>
           </div>
           <div class="col-md-3">
@@ -108,8 +109,10 @@
               <div class="icon">
                 <i class="fa fa-trophy"></i>
               </div>
-              <h2 class="counter counted" data-from="0" data-to="163" data-speed="2500"></h2>
-              <h4>Awards Received</h4>
+              <h2 *ngIf="isInView" class="counter" counto [step]="100" [countTo]="198" [countFrom]="0" [duration]="5" (countoChange)="counto2 = $event">
+                {{counto2 | number:'.0-0'}}
+              </h2>
+              <h4>עסקים מרוצים</h4>
             </div>
           </div>
           <div class="col-md-3">
@@ -117,8 +120,10 @@
               <div class="icon">
                 <i class="fa fa-send-o"></i>
               </div>
-              <h2 class="counter counted" data-from="0" data-to="317" data-speed="2500"></h2>
-              <h4>Letters Sent</h4>
+              <h2 *ngIf="isInView" class="counter" counto [step]="120" [countTo]="264" [countFrom]="0" [duration]="5" (countoChange)="counto3 = $event">
+                {{counto3 | number:'.0-0'}}
+              </h2>
+              <h4>ערים בשרון</h4>
             </div>
           </div>
           <div class="col-md-3">
@@ -126,8 +131,10 @@
               <div class="icon">
                 <i class="fa fa-user"></i>
               </div>
-              <h2 class="counter counted" data-from="0" data-to="458" data-speed="2500"></h2>
-              <h4>Hired People</h4>
+              <h2 *ngIf="isInView" class="counter" counto [step]="70" [countTo]="1549" [countFrom]="0" [duration]="5" (countoChange)="counto4 = $event">
+                {{counto4 | number:'.0-0'}}
+              </h2>
+              <h4>איזורי עבודה</h4>
             </div>
           </div>
         </div>

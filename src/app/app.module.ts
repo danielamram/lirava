@@ -25,7 +25,6 @@ import { NavigationBarComponent } from './navigation-bar';
 
 import '../styles/styles.scss';
 import '../styles/headings.css';
-import { ScrollSpyModule } from 'ng2-scrollspy';
 import { environment } from '../env/env';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
@@ -34,6 +33,8 @@ import { ServicesComponent } from './services/services.component';
 import { ContactComponent } from './contact/contact.component';
 import { Ng2PageScrollModule } from 'ng2-page-scroll';
 import { LoaderComponent } from './lodaer/loader.component';
+import { ViewportModule } from 'angular2-viewport';
+import { CountoModule }  from 'angular2-counto';
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -71,7 +72,9 @@ type StoreType = {
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule, // imports firebase/database, only needed for database features
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features
-    Ng2PageScrollModule.forRoot()
+    Ng2PageScrollModule.forRoot(),
+    ViewportModule,
+    CountoModule
   ],
   /**
    * Expose our Services and Providers into Angular's dependency injection.

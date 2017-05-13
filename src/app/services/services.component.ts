@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 
 export class ServicesComponent{
+  public isInView:boolean;
+  constructor() {
+    this.isInView = false;
+  }
+  public handlerFunction() {
+    this.isInView = true;
+  }
 }
