@@ -8,8 +8,8 @@ import {
 } from '@angular/core';
 import { PageScrollConfig } from 'ng2-page-scroll';
 import WOW from 'wow.js';
+import { AngularFireDatabase, FirebaseObjectObservable } from 'angularfire2/database';
 declare var $: any;
-declare var jQuery: any;
 
 /**
  * App Component
@@ -22,14 +22,26 @@ declare var jQuery: any;
     './app.component.css'
   ],
   template: `
-    <navigation-bar></navigation-bar>
-    <home></home>
-    <about></about>
-    <services></services>
-    <contact></contact>
+    <navigation-bar *ngIf="isLoaded"></navigation-bar>
+    <home *ngIf="isLoaded"></home>
+    <about *ngIf="isLoaded" [list]="(data$ | async)?.about"></about>
+    <services *ngIf="isLoaded"></services>
+    <contact *ngIf="isLoaded"></contact>
+    <loader *ngIf="!isLoaded"></loader>
   `
 })
 export class AppComponent implements OnInit {
+  public isLoaded:boolean;
+  public data$: FirebaseObjectObservable<any>;
+
+  constructor(db: AngularFireDatabase) {
+    this.isLoaded = false;
+    this.data$ = db.object('/');
+
+    this.data$.subscribe((a) => {
+      this.isLoaded = true;
+    })
+  }
   public ngOnInit() {
     PageScrollConfig.defaultScrollOffset = 50;
     PageScrollConfig.defaultEasingLogic = {
@@ -153,11 +165,3 @@ export class AppComponent implements OnInit {
     };
   }
 }
-
-/**
- * Please review the https://github.com/AngularClass/angular2-examples/ repo for
- * more angular app examples that you may copy/paste
- * (The examples may not be updated as quickly. Please open an issue on github for us to update it)
- * For help or questions please contact us at @AngularClass on twitter
- * or our chat on Slack at https://AngularClass.com/slack-join
- */

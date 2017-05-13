@@ -33,6 +33,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { ServicesComponent } from './services/services.component';
 import { ContactComponent } from './contact/contact.component';
 import { Ng2PageScrollModule } from 'ng2-page-scroll';
+import { LoaderComponent } from './lodaer/loader.component';
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -57,7 +58,8 @@ type StoreType = {
     AboutComponent,
     HomeComponent,
     ServicesComponent,
-    ContactComponent
+    ContactComponent,
+    LoaderComponent
   ],
   /**
    * Import Angular's modules.
